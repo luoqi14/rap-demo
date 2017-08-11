@@ -1,0 +1,14 @@
+# Package Files #
+out
+target
+build
+.idea
+*.iml
+.DS_Store
+bak
+/src/main/resources/config.properties
+/classes/
+.settings
+.classpath
+.project
+.externalToolBuilders

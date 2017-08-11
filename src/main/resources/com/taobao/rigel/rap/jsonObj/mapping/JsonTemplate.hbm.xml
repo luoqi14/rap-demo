@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.taobao.rigel.rap.jsonObj.bo.JsonObj" table="tb_json_template">
+        <id name="id">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <property name="name">
+            <column name="name"/>
+        </property>
+        <property name="data">
+            <column name="data"/>
+        </property>
+        <property name="describe">
+            <column name="describe"/>
+        </property>
+        <property name="addition">
+            <column name="addition"/>
+        </property>
+        <property name="teamId">
+            <column name="team_id"/>
+        </property>
+        <property name="ProductLineId">
+            <column name="productline_id"/>
+        </property>
+    </class>
+</hibernate-mapping>
