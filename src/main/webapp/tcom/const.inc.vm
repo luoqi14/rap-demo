@@ -13,10 +13,10 @@
 ## 时间戳
 #set($timeStamp = '20151111.v0.14.0')
 ##---------------------引入的react及其他工具-----------------------------
-<script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
-<script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
-<script src="https://cdn.bootcss.com/babel-standalone/6.25.0/babel.min.js"></script>
-<script src="https://cdn.bootcss.com/react-bootstrap/0.31.0/react-bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/15.4.2/react-dom.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.31.0/react-bootstrap.min.js"></script>
 ##----------------------页面请求action地址-------------------------------
 ## 配置工程的上下文路径
 #set($projectContext = "$!link.getContextPath()")

@@ -39,7 +39,7 @@
         <from>^/mockjsdata/(\d*?)/(.*)$</from>
         <to>/mock/createMockjsData.action?__id__=$1&amp;pattern=/${escape:utf8:$2}</to>
         <set type="response-header" name="Access-Control-Allow-Origin">*</set>
-        <set type="response-header" name="Access-Control-Allow-Headers">Origin, X-Requested-With, Content-Type, Accept
+        <set type="response-header" name="Access-Control-Allow-Headers">Origin, X-Requested-With, Content-Type, Accept, Authorization
         </set>
     </rule>
     <rule>

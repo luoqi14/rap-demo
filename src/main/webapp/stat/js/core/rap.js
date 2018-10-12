@@ -4276,10 +4276,18 @@ function deepCopy(o) {
      * params sorter
      */
     function paramsSorter(p1, p2) {
-        if (p1 !== p2) {
-            return p1.identifier > p2.identifier ? 1 : -1;
+        // if (p1 !== p2) {
+        //     return p1.identifier > p2.identifier ? 1 : -1;
+        // }
+        if (p1.id < 0 && p2.id < 0) {
+            return p1.id > p2.id ? -1 : 1;
+        } else if (p1.id > 0 && p2.id > 0) {
+            return p1.id > p2.id ? 1 : -1;
+        } else if (p1.id > 0 && p2.id < 0) {
+            return -1;
+        } else {
+            return 1;
         }
-        return p1.id > p2.id ? 1 : -1;
     }
 
     // todo render html
@@ -4296,8 +4304,8 @@ function deepCopy(o) {
             breaker = true;
 
 
-        // sortParams(requestParameterList);
-        // sortParams(responseParameterList);
+        sortParams(requestParameterList);
+        sortParams(responseParameterList);
 
         str += getAInfoHtml(a);
 
